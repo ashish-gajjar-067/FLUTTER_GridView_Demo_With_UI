@@ -9,7 +9,11 @@ class DataOfList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.orange, title: Text("Cartoon"), centerTitle: true, elevation: 0),
+      appBar: AppBar(
+          backgroundColor: Colors.orange,
+          title: Text("Cartoon"),
+          centerTitle: true,
+          elevation: 0),
       backgroundColor: Colors.orange,
       body: DataBody(data: data),
     );
@@ -33,12 +37,16 @@ class DataBody extends StatelessWidget {
               child: Container(
                 width: MediaQuery.of(context).size.width * 80 / 100,
                 height: MediaQuery.of(context).size.height * 50 / 100,
-                decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(35)),
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(35)),
                 child: Container(
                   margin: EdgeInsets.only(bottom: 10),
                   width: MediaQuery.of(context).size.width * 80 / 100,
                   height: MediaQuery.of(context).size.height * 50 / 100,
-                  decoration: BoxDecoration(color: Colors.white70, borderRadius: BorderRadius.circular(35)),
+                  decoration: BoxDecoration(
+                      color: Colors.white70,
+                      borderRadius: BorderRadius.circular(35)),
                 ),
               ),
             ),
@@ -54,13 +62,19 @@ class DataBody extends StatelessWidget {
                   Center(
                     child: Text(
                       data!.name!,
-                      style: TextStyle(color: Colors.pink, fontSize: 70, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Colors.pink,
+                          fontSize: 70,
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                   SizedBox(height: 10),
                   Text(
                     "\$${data!.prise.toString()}",
-                    style: TextStyle(color: Colors.red, fontSize: 40, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 10),
                 ],
